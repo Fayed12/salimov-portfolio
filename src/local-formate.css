@@ -1,0 +1,14 @@
+/*start font style */
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 100 900;
+}
+@font-face {
+    font-family: 'WinkySans';
+    src: url(../fonts/WinkySans-VariableFont_wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+}
+/*end font style */

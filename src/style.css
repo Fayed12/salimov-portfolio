@@ -1,0 +1,30 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "NormalWinkySans";
+    text-transform: capitalize;
+    position: relative;
+    width: 100%;
+}
+:root{
+    --main-color:#ffffff;
+    --main-dark-background-color:#ffffff;
+    --gold-color:#ffb400;
+    --hover-dark-color:#222222;
+    --transition:.4s;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+p{
+    font-family: "WinkySans";
+}
