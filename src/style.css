@@ -10,9 +10,13 @@ body{
     text-transform: capitalize;
     position: relative;
     width: 100%;
+    color: white;
+    font-family: "Roboto";
+    line-height: 1.4;
 }
 :root{
     --main-color:#ffffff;
+    --dark-color:#0b0b0b;
     --main-dark-background-color:#ffffff;
     --gold-color:#ffb400;
     --hover-dark-color:#222222;
@@ -22,9 +26,83 @@ html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
-    display: none;
+    /* display: none; */
 }
-
-p{
+/* start header */
+header{
+    background-color: var(--dark-color);
+    height: 80px;
+    padding-inline: 30px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header .header-content .list ul li{
+    height: 100%;
+    padding: 3px 7px;
     font-family: "WinkySans";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition) color;
+}
+.header .header-content .list ul li::before{
+    content: "";
+    height: 0px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    background-color: var(--gold-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: var(--transition);
+}
+.header .header-content .list ul li:hover{
+    color: var(--gold-color);
+}
+.header .header-content .list ul li:hover::before{
+    height: 20px;
+}
+.header .header-content .list ul .active{
+    color: var(--gold-color);
+}
+.header .header-content .list ul .active::before{
+    height: 20px;
+}
+.header .header-content .email p{
+    font-size: 18px;
+    font-family: "WinkySans";
+    letter-spacing: .5px;
+}
+.header .header-content .email p span{
+    color: var(--gold-color);
+}
+/* end header */
+section{
+    width: 1528px;
+    height: calc(100vh );
+}
+.main{
+    overflow-y:visible;
+}
+.main::-webkit-scrollbar{
+    height: 10px;
+}
+.main::-webkit-scrollbar-track{
+    background-color: #0b0b0b;
+}
+.main::-webkit-scrollbar-thumb{
+    background-color: #ffb400;
+}
+.home-body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.home-body::-webkit-scrollbar {
+    display: none;
 }
